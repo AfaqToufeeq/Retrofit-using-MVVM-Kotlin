@@ -55,7 +55,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:focusable="true"
             android:text="Allow Access"
-            android:textColor="@color/header_main_color"
+            android:textColor="@color/blueish"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/message"

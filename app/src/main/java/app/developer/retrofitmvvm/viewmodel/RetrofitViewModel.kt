@@ -31,7 +31,7 @@ class RetrofitViewModel:ViewModel() {
          * @exception t throws the error
          * onSuccess add the data in live data variable
          */
-        userService.enqueue(object : Callback<ApiResponseData> {
+        userService.clone().enqueue(object : Callback<ApiResponseData> {
             override fun onResponse(
                 call: Call<ApiResponseData>,
                 response: Response<ApiResponseData>

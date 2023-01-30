@@ -11,11 +11,14 @@
     <!--  Main App Colors  -->
     <color name="SplashTitleColor">#61226C</color>
     <color name="blueish">#17A2C0</color>
-    <color name="header_main_color">#237AE0</color>
+    <color name="darkBlue">#F323283A</color>
+    <color name="darkBlue2">#191140</color>
+    <color name="darkBlue3">#12054E</color>
     <color name="lightFadeBlue">#AC23283A</color>
     <color name="colorPrimary">#F323283A</color>
     <color name="colorPrimaryDark">#23283a</color>
     <color name="red_ripple">#11D71515</color>
+    <color name="dim_transparent">#5623283A</color>
     <color name="pinkShade">#BC3261</color>
     <color name="dialogbgclr">#FAFAFA</color>
 
