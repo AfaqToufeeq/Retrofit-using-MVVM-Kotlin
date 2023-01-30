@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  Main App Colors  -->
+    <color name="SplashTitleColor">#61226C</color>
+    <color name="blueish">#17A2C0</color>
+    <color name="header_main_color">#237AE0</color>
+    <color name="lightFadeBlue">#AC23283A</color>
+    <color name="colorPrimary">#F323283A</color>
+    <color name="colorPrimaryDark">#23283a</color>
+    <color name="red_ripple">#11D71515</color>
+    <color name="pinkShade">#BC3261</color>
+    <color name="dialogbgclr">#FAFAFA</color>
+
 </resources>
