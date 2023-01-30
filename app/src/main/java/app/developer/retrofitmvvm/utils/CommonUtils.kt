@@ -1,6 +1,7 @@
 package app.developer.retrofitmvvm.utils
 
 import android.app.Dialog
+import android.app.ProgressDialog.show
 import android.content.Context
 import android.view.Window
 import android.widget.TextView
@@ -22,7 +23,8 @@ class CommonUtils {
          * @param alertDialogListener listener for dialog buttons
          * */
         fun showCustomDialog(context: Context, title: String, message: String, yesBtnTest: String, noBtnText: String,
-                             showYesBtnBackground: Boolean, alertDialogListener: AlertDialogListener) {
+                             showYesBtnBackground: Boolean, alertDialogListener: AlertDialogListener
+        ) {
             val dialog = Dialog(context)
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             dialog.setCancelable(true)
@@ -35,7 +37,7 @@ class CommonUtils {
             val yesBtn: TextView = dialog.findViewById(R.id.tv_OK)
             yesBtn.text = yesBtnTest
 
-            if (showYesBtnBackground){
+            if (showYesBtnBackground){ // to show yes button blue background for permission purpose
                 yesBtn.background = ContextCompat.getDrawable(context,R.drawable.btn_background)
                 yesBtn.setTextColor(ContextCompat.getColor(context, R.color.white))
             }
@@ -51,7 +53,10 @@ class CommonUtils {
                 alertDialogListener.onNegativeClick()
                 dialog.dismiss()
             }
-            dialog.show()
+//            if(context != null ) {
+//                dialog.show() // if fragment use getActivity().isFinishing() or isAdded() method
+//            }
+
         }
     }
 }
